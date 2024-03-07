@@ -92,9 +92,9 @@
         });
     }
 
-    // alunoNomeNota(chamadaDeAlunos)
+     alunoNomeNota(chamadaDeAlunos)
 
-    function alunoAprovado(chamadaDeAlunos){
+    function alunoAprovado(){
         chamadaDeAlunos.forEach(dados => {
             if(dados.materias[0].nota >= 6 && dados.materias[0].presenca >= 75){
                 console.log(dados.nome)
@@ -104,7 +104,7 @@
 
     alunoAprovado(chamadaDeAlunos)
 
-    function alunoReprovado(chamadaDeAlunos){
+    function alunoReprovado(){
 
         chamadaDeAlunos.forEach(media => {
             if(media.materias[0].nota < 6 && media.materias[0].presenca < 75){
